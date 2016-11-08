@@ -26,6 +26,9 @@
 // | https://www.anuko.com/time_tracker/credits.htm
 // +----------------------------------------------------------------------+
 
+// Note: escape apostrophes with THREE backslashes, like here:  choisir l\\\'option.
+// Other characters (such as double-quotes in http links, etc.) do not have to be escaped.
+
 $i18n_language = 'Deutsch';
 $i18n_months = array('Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember');
 $i18n_weekdays = array('Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag');
@@ -56,16 +59,14 @@ $i18n_key_words = array(
 'menu.options' => 'Optionen',
 
 // Footer - strings on the bottom of most pages.
-// TODO: translate the following:
-// 'footer.contribute_msg' => 'You can contribute to Time Tracker in different ways.',
+'footer.contribute_msg' => 'Sie können auf verschiedenen Wegen an Time Tracker mitwirken.',
 'footer.credits' => 'Impressum',
 'footer.license' => 'Lizenz',
-// 'footer.improve' => 'Contribute', // Translators: this could mean "Improve", if it makes better sense in your language.
-                                     // This is a link to a webpage that describes how to contribute to the project.
+'footer.improve' => 'Mitwirken', // Translators: this could mean "Improve", if it makes better sense in your language.
+                                 // This is a link to a webpage that describes how to contribute to the project.
 
 // Error messages.
-// TODO: translate the following string.
-// 'error.access_denied' => 'Access denied.',
+'error.access_denied' => 'Zugang benötigt.',
 'error.sys' => 'Systemfehler.',
 'error.db' => 'Datenbankfehler.',
 'error.field' => 'Ungültige "{0}" Daten.',
@@ -75,20 +76,18 @@ $i18n_key_words = array(
 'error.project' => 'Projekt wählen.',
 'error.task' => 'Aufgabe auswählen.',
 'error.client' => 'Kunde auswählen.',
-// TODO: translate the following string.
-// 'error.report' => 'Select report.',
+'error.report' => 'Report auswählen.',
 'error.auth' => 'Benutzername oder Passwort ungültig.',
 'error.user_exists' => 'Benutzer mit diesem Konto ist bereits vorhanden.',
 'error.project_exists' => 'Es gibt bereits ein Projekt mit diesem Namen.',
-'error.task_exists' => 'Task mit diesem Namen existiert bereits.',
+'error.task_exists' => 'Aufgabe mit diesem Namen existiert bereits.',
 'error.client_exists' => 'Der Kunde mit dem Namen existiert schon.',
 'error.invoice_exists' => 'Rechnung mit dieser Nummer existiert bereits.',
 'error.no_invoiceable_items' => 'Keine Einträge zur Rechnungsstellung gefunden.',
 'error.no_login' => 'Benutzer mit diesen Anmeldedaten nicht vorhanden.',
 'error.no_teams' => 'Die Datenbank ist leer. Als Administrator anmelden und ein neues Team erzeugen.',
 'error.upload' => 'Fehler beim hochladen einer Datei.',
-// TODO: Translate the following:
-// 'error.range_locked' => 'Date range is locked.',
+'error.range_locked' => 'Datumsbereich ist gesperrt.',
 'error.mail_send' => 'Fehler beim versenden einer E-Mail.',
 'error.no_email' => 'Dieser Benutzer besitzt keine e-Mail Adresse.',
 'error.uncompleted_exists' => 'Unvollständiger Eintrag bereits vorhanden. Schließen oder Löschen.',
@@ -105,8 +104,8 @@ $i18n_key_words = array(
 'button.submit' => 'Abschicken',
 'button.add_user' => 'Benutzerkonto hinzufügen',
 'button.add_project' => 'Projekt anlegen',
-'button.add_task' => 'Task hinzufügen',
-'button.add_client' => 'Auftraggeber anlegen',
+'button.add_task' => 'Aufgabe hinzufügen',
+'button.add_client' => 'Kunde anlegen',
 'button.add_invoice' => 'Rechnung hinzufügen',
 'button.add_option' => 'Option hinzufügen',
 'button.add' => 'Hinzufügen',
@@ -154,8 +153,7 @@ $i18n_key_words = array(
 'label.cost' => 'Kosten',
 'label.day_total' => 'Summe (Tag)',
 'label.week_total' => 'Summe (Woche)',
-// TODO: translate the following.
-// 'label.month_total' => 'Month total',
+'label.month_total' => 'Summe (Monat)',
 'label.today' => 'Heute',
 'label.total_hours' => 'Gesamtstunden',
 'label.total_cost' => 'Totale Kosten',
@@ -167,8 +165,7 @@ $i18n_key_words = array(
 'label.select_none' => 'Alle abwählen',
 'label.id' => 'ID',
 'label.language' => 'Sprache',
-// TODO: translate the following string.
-// 'label.decimal_mark' => 'Decimal mark',
+'label.decimal_mark' => 'Dezimalzeichen',
 'label.date_format' => 'Datumsformat',
 'label.time_format' => 'Zeitformat',
 'label.week_start' => 'Erster Wochentag',
@@ -187,25 +184,22 @@ $i18n_key_words = array(
 'label.role_manager' => '(Manager)',
 'label.role_comanager' => '(Co-Manager)',
 'label.role_admin' => '(Administrator)',
-// Translate the following.
-// 'label.page' => 'Page',
+'label.page' => 'Seite',
 // Labels for plugins (extensions to Time Tracker that provide additional features).
 'label.custom_fields' => 'Benutzerfelder',
-// Translate the following.
-// 'label.monthly_quotas' => 'Monthly quotas',
+'label.monthly_quotas' => 'Monatsquoten',
 'label.type' => 'Typ',
 'label.type_dropdown' => 'Ausklappen',
 'label.type_text' => 'Text',
 'label.required' => 'Benötigt',
 'label.fav_report' => 'Bevorzugter Report',
-// TODO: translate the following strings.
-// 'label.cron_schedule' => 'Cron schedule',
-// 'label.what_is_it' => 'What is it?',
+'label.cron_schedule' => 'Cron Zeitplan',
+'label.what_is_it' => 'Was ist es?',
 
 // Form titles.
 'title.login' => 'Anmelden',
 'title.teams' => 'Teams',
-'title.create_team' => 'Arbeitsgruppe anlegen',
+'title.create_team' => 'Team anlegen',
 'title.edit_team' => 'Team bearbeiten',
 'title.delete_team' => 'Team löschen',
 'title.reset_password' => 'Passworterinnerung',
@@ -242,14 +236,13 @@ $i18n_key_words = array(
 'title.add_invoice' => 'Rechnung hinzufügen',
 'title.view_invoice' => 'Rechnung ansehen',
 'title.delete_invoice' => 'Rechnung löschen',
-// TODO: translate the following strings.
-// 'title.notifications' => 'Notifications',
-// 'title.add_notification' => 'Adding Notification',
-// 'title.edit_notification' => 'Editing Notification',
-// 'title.delete_notification' => 'Deleting Notification',
-// 'title.monthly_quotas' => 'Monthly Quotas',
-'title.export' => 'Daten exportieren',
-'title.import' => 'Daten importieren',
+'title.notifications' => 'Benachrichtigungen',
+'title.add_notification' => 'Erweiterungsbenachrichtigung',
+'title.edit_notification' => 'Änderungsbenachrichtigung',
+'title.delete_notification' => 'Löschbenachrichtigung',
+'title.monthly_quotas' => 'Monatsquoten',
+'title.export' => 'Teamdaten exportieren',
+'title.import' => 'Teamdaten importieren',
 'title.options' => 'Optionen',
 'title.profile' => 'Profil',
 'title.cf_custom_fields' => 'Benutzerfelder',
@@ -262,14 +255,13 @@ $i18n_key_words = array(
 'title.cf_delete_dropdown_option' => 'Auswahlmöglichkeit löschen',
 // NOTE TO TRANSLATORS: Locking is a feature to lock records from modifications (ex: weekly on Mondays we lock all previous weeks).
 // It is also a name for the Locking plugin on the Team profile page.
-// TODO: Translate the following:
-// 'title.locking' => 'Locking',
-
+'title.locking' => 'Sperrung',
 
 // Section for common strings inside combo boxes on forms. Strings shared between forms shall be placed here.
 // Strings that are used in a single form must go to the specific form section.
 'dropdown.all' => '--- alle ---',
 'dropdown.no' => '--- nein ---',
+// NOTE TO TRANSLATORS: dropdown.this_day does not necessarily means "today". It means a specific ("this") day selected on calendar. See Charts.
 'dropdown.this_day' => 'aktueller Tag',
 'dropdown.this_week' => 'aktuelle Woche',
 'dropdown.last_week' => 'vorherige Woche',
@@ -284,9 +276,8 @@ $i18n_key_words = array(
 'dropdown.select_invoice' => '--- Rechnung auswählen ---',
 'dropdown.status_active' => 'aktiv',
 'dropdown.status_inactive' => 'inaktiv',
-// TODO: translate the following strings.
-// 'dropdown.delete'=>'delete',
-// 'dropdown.do_not_delete'=>'do not delete',
+'dropdown.delete'=>'löschen',
+'dropdown.do_not_delete'=>'nicht löschen',
 
 // Below is a section for strings that are used on individual forms. When a string is used only on one form it should be placed here.
 // One exception is for closely related forms such as "Time" and "Editing Time Record" with similar controls. In such cases
@@ -309,9 +300,8 @@ $i18n_key_words = array(
 'form.time.duration_format' => '(hh:mm oder 0.0h)',
 'form.time.billable' => 'In Rechnung stellen',
 'form.time.uncompleted' => 'Unvollständig',
-// TODO: translate the following.
-// 'form.time.remaining_quota' => 'Remaining quota',
-// 'form.time.over_quota' => 'Over quota',
+'form.time.remaining_quota' => 'Verbleibende Quote',
+'form.time.over_quota' => 'Über der Quote',
 
 // Editing Time Record form. See example at https://timetracker.anuko.com/time_edit.php (get there by editing an uncompleted time record).
 'form.time_edit.uncompleted' => 'Dieser Eintrag wurde ohne Startzeit gespeichert. Dies ist kein Fehler.',
@@ -322,9 +312,8 @@ $i18n_key_words = array(
 'form.reports.include_records' => 'Daten hinzufügen',
 'form.reports.include_billable' => 'in Rechnung stellen',
 'form.reports.include_not_billable' => 'nicht in Rechnung stellen',
-// TODO: translate the following strings.
-// 'form.reports.include_invoiced' => 'invoiced',
-// 'form.reports.include_not_invoiced' => 'not invoiced',
+'form.reports.include_invoiced' => 'in Rechnung gestellt',
+'form.reports.include_not_invoiced' => 'nicht in Rechnung gestellt',
 'form.reports.select_period' => 'Zeitraum auswählen',
 'form.reports.set_period' => 'oder Datum eingeben',
 'form.reports.show_fields' => 'Felder anzeigen',
@@ -345,9 +334,8 @@ $i18n_key_words = array(
 // (you can get to this form after generating a report).
 'form.invoice.number' => 'Rechnungsnummer',
 'form.invoice.person' => 'Person',
-// TODO: translate the following stings.
-// 'form.invoice.invoice_to_delete' => 'Invoice to delete',
-// 'form.invoice.invoice_entries' => 'Invoice entries',
+'form.invoice.invoice_to_delete' => 'Zu löschende Rechnung',
+'form.invoice.invoice_entries' => 'Rechnungseinträge',
 
 // Charts form. See example at https://timetracker.anuko.com/charts.php
 'form.charts.interval' => 'Zeitraum',
@@ -358,14 +346,13 @@ $i18n_key_words = array(
 'form.projects.inactive_projects' => 'Inaktive Projekte',
 
 // Tasks form. See example at https://timetracker.anuko.com/tasks.php
-'form.tasks.active_tasks' => 'Aktive Tasks',
-'form.tasks.inactive_tasks' => 'Inaktive Tasks',
+'form.tasks.active_tasks' => 'Aktive Aufgaben',
+'form.tasks.inactive_tasks' => 'Inaktive Aufgaben',
 
 // Users form. See example at https://timetracker.anuko.com/users.php
 'form.users.active_users' => 'Aktive Nutzer',
 'form.users.inactive_users' => 'Inaktive Nutzer',
- // TODO: translate the following.
- // 'form.users.uncompleted_entry' => 'User has an uncompleted time entry',
+'form.users.uncompleted_entry' => 'Der Nutzer hat einen unvollständigen Zeiteintrag',
 'form.users.role' => 'Rolle',
 'form.users.manager' => 'Manager',
 'form.users.comanager' => 'Co-Manager',
@@ -373,9 +360,8 @@ $i18n_key_words = array(
 'form.users.default_rate' => 'Normaler Stundensatz',
 
 // Client delete form. See example at https://timetracker.anuko.com/client_delete.php
-// TODO: translate the following strings.
-// 'form.client.client_to_delete' => 'Client to delete',
-// 'form.client.client_entries' => 'Client entries',
+'form.client.client_to_delete' => 'Zu löschender Kunde',
+'form.client.client_entries' => 'Kundeneinträge',
 
 // Clients form. See example at https://timetracker.anuko.com/clients.php
 'form.clients.active_clients' => 'Aktive Kunden',
@@ -393,7 +379,7 @@ $i18n_key_words = array(
 'form.import.success' => 'Import erfolgreich abgeschlossen.',
 
 // Teams form. See example at https://timetracker.anuko.com/admin_teams.php (login as admin first).
-'form.teams.hint' => 'Das Erzeugen eines neuen Manager Kontos, erzeugt eine neues Team.<br>Diese Teams können auch von XML-Dateien importiert werden.',
+'form.teams.hint' => 'Erzeugen eines neuen Teams durch erzeugen eines neuen Teammanagerkontos.<br>Diese Teamdaten können auch aus einer XML-Dateien von einem anderen Anuko Time Tracker Server importiert werden. (Anmeldekollisionen sind nicht gestattet)',
 
 // Profile form. See example at https://timetracker.anuko.com/profile_edit.php.
 'form.profile.12_hours' => '12 Stunden',
@@ -403,6 +389,9 @@ $i18n_key_words = array(
 'form.profile.mode_projects' => 'Projekte',
 'form.profile.mode_projects_and_tasks' => 'Projekte und Aufgaben',
 'form.profile.record_type' => 'Zeiterfassungstyp',
+'form.profile.uncompleted_indicators' => 'Unvollständige Hinweise',
+'form.profile.uncompleted_indicators_none' => 'nicht zeigen',
+'form.profile.uncompleted_indicators_show' => 'zeigen',
 'form.profile.type_all' => 'alle',
 'form.profile.type_start_finish' => 'Start und Ende',
 'form.profile.type_duration' => 'Dauer',
@@ -417,4 +406,12 @@ $i18n_key_words = array(
 'form.mail.footer' => 'Anuko Time Tracker ist ein einfaches, leicht zu bedienendes, Open-Source<br>Zeitverwaltungs-System. Besuchen Sie <a href="https://www.anuko.com">www.anuko.com</a> für weitere Informationen.',
 'form.mail.report_sent' => 'Der Bericht wurde gesendet.',
 'form.mail.invoice_sent' => 'Die Rechnung wurde gesendet.',
+
+// Quotas configuration form.
+'form.quota.year' => 'Jahr',
+'form.quota.month' => 'Monat',
+'form.quota.quota' => 'Quote',
+'form.quota.workday_hours' => 'Stunden eines Arbeitstages',
+'form.quota.hint' => 'Wenn die Werte leer sind werdend die Quoten automatisch berechnet auf der Basis von Stunden pro Arbeitstag und den Ferien.',
+
 );
